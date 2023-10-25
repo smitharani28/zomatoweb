@@ -1,0 +1,1186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title><!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <title>Zomato</title>
+        <style>
+            *{
+                margin: 0;
+            }
+          .main{
+            width: 700px;
+            height: 250px;
+            background-color: white;
+            position: relative;
+            left: 400px;
+          }
+          .head{
+            width: 100%;
+            height: 80px;
+            background-color: white;
+          }
+          .site{
+            width: 200px;
+            height: 80px;
+            font-size: 30px;
+            
+            color: rgb(15, 3, 3);
+            font-style: italic;
+            background-color: white;
+            position: relative;
+          }
+          .zomato{
+            width: 200px;
+            height: 40px;
+            position: absolute;
+            top: 15px;
+    
+          }
+          
+          .dp1{
+            position: absolute;
+            top: 15px;
+            left: 220px;
+            border-radius: 10px 10px 10px 10px;
+            border: 1px rgb(156, 156, 156) solid;
+            
+          }
+          .search{
+            position: absolute;
+            top: 15px;
+            left: 370px;
+            width: 400px;
+            height: 40px;
+            border-radius: 10px 10px 10px 10px;
+            border: 1px rgb(156, 156, 156) solid;
+            
+          }
+          .log{
+            position: absolute;
+            top: 26px;
+            left: 850px;
+            text-decoration: none;
+            color: #696969;
+            font-size: 18px;
+            font-family: Arial, Helvetica, sans-serif;
+          }
+          .sign{
+            position: absolute;
+            top: 26px;
+            left: 950px;
+            text-decoration: none;
+            color: #696969;
+            font-size: 18px;
+            font-family: Arial, Helvetica, sans-serif;
+          }
+          .div1{
+            width: 100%;
+            height: 100px;
+            background-color: yellowgreene;
+          }
+          .opt{
+            width: 220px;
+            height: 80px;
+            background-color: reed;
+            float: left;
+          }
+          .img1{
+            width: 40px;
+            position: absolute;
+            left: 20px;
+            top: 10px;
+            
+          }
+          .img2{
+            width: 40px;
+            position: absolute;
+            left: 20px;
+            top: 10px;
+          }
+          .img3{
+            width: 40px;
+            position: absolute;
+            left: 20px;
+            top: 10px;
+    
+          }
+          p{
+            position: absolute;
+            top: 25px;
+            z-index: 1;
+            font-size: 22px;
+            color: #EF4F5F;
+            font-family: Arial, Helvetica, sans-serif;
+    
+          }
+          .p1{
+            color: #696969;
+          }
+          .p1:focus{
+            color: #EF4F5F;
+          }
+          .p2{
+            z-index: 1;
+            position: absolute;
+            left: 450px;
+            color: #696969;
+          }
+          .filter{
+            width: 100%;
+            height: 70px;
+            background-color: royalbluee;
+          }
+          .filt{
+            width: 60px;
+            height: 35px;
+            padding: 10px;
+            position: absolute;
+            top: 195px;
+            left: 10px;
+            color: rgb(156, 156, 156);
+            background-color: #ffffff;
+            border-radius: 10px 10px 10px 10px;
+            border: 1px rgb(156, 156, 156) solid;
+          }
+          .filt1{
+            width: 90px;
+            height: 35px;
+            padding: 10px;
+            position: absolute;
+            top: 195px;
+            left: 90px;
+            color: rgb(156, 156, 156);
+            background-color: #ffffff;
+            border-radius: 10px 10px 10px 10px;
+            border: 1px rgb(156, 156, 156) solid;
+    
+          }
+          .filt2{
+            width: 90px;
+            height: 35px;
+            padding: 10px;
+            position: absolute;
+            top: 195px;
+            left: 200px;
+            color: rgb(156, 156, 156);
+            background-color: #ffffff;
+            border-radius: 10px 10px 10px 10px;
+            border: 1px rgb(156, 156, 156) solid;
+          }
+          .filt3{
+            width: 100px;
+            height: 35px;
+            padding: 10px;
+            position: absolute;
+            top: 195px;
+            left: 310px;
+            color: rgb(156, 156, 156);
+            background-color: #ffffff;
+            border-radius: 10px 10px 10px 10px;
+            border: 1px rgb(156, 156, 156) solid;
+          }
+          .food{
+            width: 100%;
+            height: 350px;
+            background-color: rgb(248, 248, 248);
+            position: relative;
+          }
+          .firstorder{
+            position: absolute;
+            top: 40px;
+            left: 410px;
+            font-size: 30px;
+            font-family: Arial, Helvetica, sans-serif;
+            color: #1c1c1c;
+            font-style: normal;
+          }
+          .food1{
+            width: 150px;
+            height: 150px;
+            background-color: orangee;
+            position: absolute;
+            top: 120px;
+            left: 400px;
+            border-radius: 50%;
+          }
+          .kachori{
+            position: absolute;
+            top: 290px;
+            left: 440px;
+            color: #363636;
+            font-size: 20px;
+            font-family: Arial, Helvetica, sans-serif;
+    
+          }
+          .food2{
+            width: 150px;
+            height: 150px;
+            background-color: oranege;
+            position: absolute;
+            top: 120px;
+            left: 590px;
+            border-radius: 50%;
+          }
+          .sandwich{
+            position: absolute;
+            top: 290px;
+            left: 620px;
+            color: #363636;
+            font-size: 20px;
+            font-family: Arial, Helvetica, sans-serif;
+          }
+          .food3{
+            width: 150px;
+            height: 150px;
+            background-color: oranege;
+            position: absolute;
+            top: 120px;
+            left: 780px;
+            border-radius: 50%;
+    
+          }
+          .dosa{
+            position: absolute;
+            top: 290px;
+            left: 830px;
+            color: #363636;
+            font-size: 20px;
+            font-family: Arial, Helvetica, sans-serif;
+          }
+          .food4{
+            width: 150px;
+            height: 150px;
+            background-color: oranege;
+            position: absolute;
+            top: 120px;
+            left: 970px;
+            border-radius: 50%;
+          }
+          .jalebi{
+            position: absolute;
+            top: 290px;
+            left: 1015px;
+            color: #363636;
+            font-size: 20px;
+            font-family: Arial, Helvetica, sans-serif;
+          }
+          .food5{
+            width: 150px;
+            height: 150px;
+            background-color: oranege;
+            position: absolute;
+            top: 120px;
+            left: 1160px;
+            border-radius: 50%;
+          }
+          .cake{
+            position: absolute;
+            top: 290px;
+            left: 1215px;
+            color: #363636;
+            font-size: 20px;
+            font-family: Arial, Helvetica, sans-serif;
+          }
+          .food6{
+            width: 150px;
+            height: 150px;
+            background-color: oraenge;
+            position: absolute;
+            top: 120px;
+            left: 1350px;
+            border-radius: 50%;
+          }
+          .chicken{
+            position: absolute;
+            top: 290px;
+            left: 1395px;
+            color: #363636;
+            font-size: 20px;
+            font-family: Arial, Helvetica, sans-serif;
+          }
+          .brand{
+            width: 1100px;
+            height: 360px;
+            background-color: pienk;
+            position: relative;
+            left: 400px;
+          }
+          .topbrand{
+            position: absolute;
+            top: 40px;
+            left: 20px;
+            font-size: 30px;
+            font-family: Arial, Helvetica, sans-serif;
+            color: #1c1c1c;
+            font-style: normal;
+          }
+          .top1{
+            width: 150px;
+            height: 150px;
+            background-color: orange;
+            position: absolute;
+            top: 120px;
+            left: 10px;
+            border-radius: 50%;
+          }
+          .wow{
+            position:absolute;
+            top: 300px;
+            left: 35px;
+            color: #1c1c1c;
+            font-size: 16px;
+            font-family: Arial, Helvetica, sans-serif;
+          }
+          .top2{
+            width: 150px;
+            height: 150px;
+            background-color: oranege;
+            position: absolute;
+            top: 120px;
+            left: 190px;
+            border-radius: 50%;
+          }
+          .kfc{
+            position:absolute;
+            top: 300px;
+            left: 250px;
+            color: #1c1c1c;
+            font-size: 16px;
+            font-family: Arial, Helvetica, sans-serif;
+          }
+          .top3{
+            width: 150px;
+            height: 150px;
+            background-color: oraenge;
+            position: absolute;
+            top: 120px;
+            left: 370px;
+            border-radius: 50%;
+          }
+          .chowman{
+            position:absolute;
+            top: 300px;
+            left: 410px;
+            color: #1c1c1c;
+            font-size: 16px;
+            font-family: Arial, Helvetica, sans-serif;
+          }
+          .top4{
+            width: 150px;
+            height: 150px;
+            background-color: oraenge;
+            position: absolute;
+            top: 120px;
+            left: 550px;
+            border-radius: 50%;
+          }
+          .arsalan{
+            position:absolute;
+            top: 300px;
+            left: 600px;
+            color: #1c1c1c;
+            font-size: 16px;
+            font-family: Arial, Helvetica, sans-serif;
+          }
+          .top5{
+            width: 150px;
+            height: 150px;
+            background-color: oraenge;
+            position: absolute;
+            top: 120px;
+            left: 740px;
+            border-radius: 50%;
+          }
+          .burger{
+            position:absolute;
+            top: 300px;
+            left: 770px;
+            color: #1c1c1c;
+            font-size: 16px;
+            font-family: Arial, Helvetica, sans-serif;
+          }
+          .top6{
+            width: 150px;
+            height: 150px;
+            background-color: orange;
+            position: absolute;
+            top: 120px;
+            left: 930px;
+            border-radius: 50%;
+          }
+          .gupta{
+            position:absolute;
+            top: 300px;
+            left: 950px;
+            color: #1c1c1c;
+            font-size: 16px;
+            font-family: Arial, Helvetica, sans-serif;
+          }
+          .du{
+            position: absolute;
+            top: 330px;
+            left: 60px;
+            font-size: 14px;
+            color: #1c1c1c;
+            font-family: Arial, Helvetica, sans-serif;
+          }
+          .du1{
+            position: absolute;
+            top: 330px;
+            left: 245px;
+            font-size: 14px;
+            color: #1c1c1c;
+            font-family: Arial, Helvetica, sans-serif;
+          }
+          .du2{
+            position: absolute;
+            top: 330px;
+            left: 990px;
+            font-size: 14px;
+            color: #1c1c1c;
+            font-family: Arial, Helvetica, sans-serif;
+          }
+          .du3{
+            position: absolute;
+            top: 330px;
+            left: 425px;
+            font-size: 14px;
+            color: #1c1c1c;
+            font-family: Arial, Helvetica, sans-serif;
+          }
+          .du4{
+            position: absolute;
+            top: 330px;
+            left: 607px;
+            font-size: 14px;
+            color: #1c1c1c;
+            font-family: Arial, Helvetica, sans-serif;
+          }
+          .du5{
+            position: absolute;
+            top: 330px;
+            left: 800px;
+            font-size: 14px;
+            color: #1c1c1c;
+            font-family: Arial, Helvetica, sans-serif;
+          }
+          .du6{
+            position: absolute;
+            top: 330px;
+            left: 60px;
+            font-size: 14px;
+            color: #1c1c1c;
+            font-family: Arial, Helvetica, sans-serif;
+          }
+          .best{
+            width: 1100px;
+            height: 100px;
+            position: relative;
+            left: 400px;
+            background-color: oraenge;
+          }
+          .bestfood{
+            position: absolute;
+            top: 30px;
+            left: 20px;
+            font-size: 30px;
+            font-family: Arial, Helvetica, sans-serif;
+            color: #1c1c1c;
+            font-style: normal;
+    
+          }
+          .ads{
+            width: 1100px;
+            height: 3100px;
+            background-color: pinek;
+            position: relative;
+            left: 400px;
+          }
+          .row1{
+            width: 100%;
+            height: 400px;
+            
+          }
+          .mik{
+            width: 366px;
+            height: 400px;
+            background-color: aqeua;
+            float: left;
+            border-radius: 20px 20px 20px 20px;
+          }
+          .bor{
+            width: 350px;
+            height: 280px;
+            background-color: reed;
+            position: absolute;
+            top: 10px;
+            left: 8px;
+            border-radius: 20px 20px 20px 20px;
+          }
+          .bor:hover{
+            transform: scale(1.15,1.15);
+            
+          }
+          .bor1{
+            width: 350px;
+            height: 280px;
+            background-color: aequa;
+            position: absolute;
+            top: 10px;
+            left: 375px;
+            border-radius: 20px 20px 20px 20px;
+          }
+          .bor1:hover{
+            transform: scale(1.1,1.1);
+          }
+          .bor2{
+            width: 350px;
+            height: 280px;
+            background-color: ered;
+            position: absolute;
+            top: 10px;
+            left: 740px;
+            border-radius: 20px 20px 20px 20px;
+          }
+          .bor2:hover{
+            transform: scale(1.1,1.1);
+          }
+          .offer{
+            width: 80px;
+            height: 20px;
+            background-color: #256FEF;
+            color: #ffffff;
+            position: absolute;
+            top: 230px;
+            font-size: 14px;
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+          }
+          .name{
+            width: 350px;
+            height: 50px;
+            background-color: oraenge;
+            position: absolute;
+            top: 295px;
+            left: 5px;
+          }
+          .names{
+            background-color: charetreuse;
+            width: 250px;
+            height: 50px;
+          }
+          .shop{
+            font-size: 17px;
+            font-family: Arial, Helvetica, sans-serif;
+            color: #1c1c1c;
+            margin-top: -8px;
+          }
+          .rate{
+            width: 50px;
+            height: 30px;
+            background-color: #267e3e;
+            border-radius: 10px 10px 10px 10px;
+            position: absolute;
+            top: 10px;
+            left: 290px;
+          }
+          .rating{
+             color: #ffffff;
+             position: absolute;
+             top: 5px;
+             left: 10px;
+             font-size: 13px;
+             font-family: Arial, Helvetica, sans-serif;
+          }
+          .money{
+            background-color: pinek;
+            width: 350px;
+            height: 50px;
+          }
+          .item{
+            width: 230px;
+            height: 40px;
+            
+          }
+          .pa{
+            position: absolute;
+            top: 55px;
+            color: #696969;
+            font-size: 14px;
+            font-family: Arial, Helvetica, sans-serif;
+          }
+          .cost{
+            background-color: chartreeuse;
+            width: 100px;
+            height: 40px;
+            position: absolute;
+            top: 50px;
+            left: 250px;
+          }
+          .pb{
+            color: #696969;
+            font-size: 14px;
+            position: absolute;
+            top: 5px;
+            left: 10px;
+          }
+          .pc{
+            position: absolute;
+            top: 25px;
+            left: 58px;
+            color: #363636;
+            font-size: 12px;
+            font-family: Arial, Helvetica, sans-serif;
+          }
+          .row2{
+            
+            width: 100%;
+            height: 400px;
+            position: absolute;
+            top: 440px;
+            left: 0px;
+          }
+          .row3{
+            
+            width: 100%;
+            height: 400px;
+            position: absolute;
+            top: 440px;
+            left: 0px;
+          }
+          .row4{
+            
+            width: 100%;
+            height: 400px;
+            position: absolute;
+            top: 440px;
+            left: 0px;
+          }
+          .row5{
+            
+            width: 100%;
+            height: 400px;
+            position: absolute;
+            top: 440px;
+            left: 0px;
+          }
+          .row6{
+           
+            width: 100%;
+            height: 400px;
+            position: absolute;
+            top: 440px;
+            left: 0px; 
+          }
+          .row7{
+            width: 100%;
+            height: 400px;
+            position: absolute;
+            top: 440px;
+            left: 0px; 
+          }
+          .explore{
+            width: 1100px;
+            height: 500px;
+            position: relative;
+            top: 450px;  
+          }
+          .near{
+            font-size: 30px;
+            font-family: Arial, Helvetica, sans-serif;
+            color: #363636;
+            font-style: normal;
+            position: absolute;
+            left: 10px;
+          }
+          .nearme{
+            position: absolute;
+            left: 0px;
+            top: 70px;
+            width: 100%;
+            height: 80px;
+            padding: 20px 24px;
+            font-size: 20px;
+            color: #1c1c1c;
+            font-family: Arial, Helvetica, sans-serif;
+            border-radius: 10px 10px 10px 10px;
+          }
+          .nearme1{
+            position: absolute;
+            left: 0px;
+            top: 170px;
+            width: 100%;
+            height: 80px;
+            padding: 20px 24px;
+            font-size: 20px;
+            color: #1c1c1c;
+            font-family: Arial, Helvetica, sans-serif;
+            border-radius: 10px 10px 10px 10px;
+          }
+          .nearme2{
+            position: absolute;
+            left: 0px;
+            top: 270px;
+            width: 100%;
+            height: 80px;
+            padding: 20px 24px;
+            font-size: 20px;
+            color: #1c1c1c;
+            font-family: Arial, Helvetica, sans-serif;
+            border-radius: 10px 10px 10px 10px;
+          }
+          .nearme3{
+            position: absolute;
+            left: 0px;
+            top: 370px;
+            width: 100%;
+            height: 80px;
+            padding: 20px 24px;
+            font-size: 20px;
+            color: #1c1c1c;
+            font-family: Arial, Helvetica, sans-serif;
+            border-radius: 10px 10px 10px 10px;
+          }
+          .foot{
+            width: 1900px;
+            height: 400px;
+            position: relative;
+            top: 450px;
+            left: -400px;
+            
+            background-color: rgb(248, 248, 248);
+          }
+          .zoma{
+            position: absolute;
+            top: 50px;
+            left: 440px;
+            width: 170px;
+            height: 50px;
+          }
+          .india{
+            position: absolute;
+            top: 70px;
+            left: 1200px;
+            width: 100px;
+            height: 50px;
+            border-radius: 10px 10px 10px 10px;
+            font-size: 20px;
+            padding: 10px;
+            font-family: Arial, Helvetica, sans-serif;
+          }
+          .english{
+            position: absolute;
+            top: 70px;
+            left: 1340px;
+            width: 130px;
+            height: 50px;
+            border-radius: 10px 10px 10px 10px;
+            font-size: 20px;
+            padding: 10px;
+            font-family: Arial, Helvetica, sans-serif;
+          }
+          .abo{
+            color: #000000;
+            font-size: 14px;
+            font-family: Arial, Helvetica, sans-serif;
+            position: absolute;
+            top: 150px;
+            left: 450px;
+            letter-spacing: 2px;
+          }
+          .w{
+            position: absolute;
+            top: 180px;
+            left: 410px;
+            list-style-type: none;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 14px;
+            color: #696969;  
+          }
+          .about1{
+            padding-bottom: 8px;
+          }
+          .zom{
+            color: #000000;
+            font-size: 14px;
+            font-family: Arial, Helvetica, sans-serif;
+            position: absolute;
+            top: 150px;
+            left: 625px;
+            letter-spacing: 2px;
+          }
+          .y{
+            position: absolute;
+            top: 180px;
+            left: 588px;
+            list-style-type: none;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 14px;
+            color: #696969;  
+          }
+          .for{
+            color: #000000;
+            font-size: 14px;
+            font-family: Arial, Helvetica, sans-serif;
+            position: absolute;
+            top: 150px;
+            left: 800px;
+            letter-spacing: 2px;
+          }
+          .z{
+            position: absolute;
+            top: 180px;
+            left: 760px;
+            list-style-type: none;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 14px;
+            color: #696969; 
+          }
+          .ent{
+            color: #000000;
+            font-size: 14px;
+            font-family: Arial, Helvetica, sans-serif;
+            position: absolute;
+            top: 240px;
+            left: 800px;
+            letter-spacing: 2px;
+          }
+          .for1{
+            position: absolute;
+            top: 270px;
+            left: 760px;
+            list-style-type: none;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 14px;
+            color: #696969;
+          }
+          .more{
+            color: #000000;
+            font-size: 14px;
+            font-family: Arial, Helvetica, sans-serif;
+            position: absolute;
+            top: 150px;
+            left: 1030px;
+            letter-spacing: 2px;
+          }
+          .priv{
+            position: absolute;
+            top: 170px;
+            left: 992px;
+            list-style-type: none;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 14px;
+            color: #696969;
+          }
+          .social{
+            color: #000000;
+            font-size: 14px;
+            font-family: Arial, Helvetica, sans-serif;
+            position: absolute;
+            top: 150px;
+            left: 1220px;
+            letter-spacing: 2px;
+          }
+          .common{
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+          }
+          .linked{
+            position: absolute;
+            top: 180px;
+            left: 1220px;
+          }
+          .insta{
+            position: absolute;
+            top: 180px;
+            left: 1255px;
+          }
+          .twit{
+            position: absolute;
+            top: 180px;
+            left: 1290px;
+          }
+          .you{
+            position: absolute;
+            top: 180px;
+            left: 1325px;
+          }
+          .fb{
+            position: absolute;
+            top: 180px;
+            left: 1360px;
+          }
+          .appstore{
+            position: absolute;
+            left: 1210px;
+            top: 220px;
+            width: 200px;
+            height: 60px;
+          }
+          .play{
+            position: absolute;
+            left: 1210px;
+            top: 300px;
+            width: 200px;
+            height: 60px;
+          }
+          
+          
+          
+        </style>
+   
+</head>
+<body>
+        <div class="main">
+            <div class="head"><div class="site"><h1> <i> zomato</i></h1></div>
+              
+                <!--<div class="site">
+                    <img class="zomato" src="https://b.zmtcdn.com/web_assets/b40b97e677bc7b2ca77c58c61db266fe1603954218.png">
+                </div>-->
+               <select class="dp1" name="location" id="lo" style="width: 150px; height: 40px;">
+               <option value="Kolkata">Kolkata</option>
+               <option value="Detect current location using gps">Detect current location using gps</option>
+               </select>
+               <input type="search" class="search" placeholder=" 🔍  Search for restaurant, cuisine or a dish"><span style="position: absolute; top: 20px; left: 800px;"></span>
+               <a href="" class="log">Login</a>
+               <a href="" class="sign">Sign up</a>
+            </div>
+            
+            <div class="div1">
+                <div class="opt">
+                      <div class="sub" style="width: 80px; height: 60px; background-color: rgb(252, 238, 192); border-radius: 50%; position: absolute; top: 90px;left: 10px;"><img src="	https://b.zmtcdn.com/data/o2_assets/c0bb85d3a6347b2ec070a8db694588261616149578.png" class="img1"></div>
+                      <div class="suj" style="width: 120px; height: 80px;position: absolute; top: 80px; left: 100px;"><p>Delivery</p></div>
+                </div>
+                <div class="opt" style="background-color: oraenge;">
+                    <div class="sub" style="width: 80px; height: 60px; background-color: #F8F8F8; border-radius: 50%;position: absolute; top: 90px;left: 230px;"><img src="	https://b.zmtcdn.com/data/o2_assets/78d25215ff4c1299578ed36eefd5f39d1616149985.png" class="img2"></div>
+                    <div class="suj" style="width: 120px; height: 80px; background-color: rgb(249e, 127, 255);position: absolute; top: 80px; left: 320px;"><P class="p1">Dining Out</P></div>
+                </div>
+                <div class="opt" style="background-color: cornflowerbluee;">
+                    <div class="sub" style="width: 80px; height: 60px; background-color: #f8f8f8; border-radius: 50%; position: absolute; top: 90px; left: 450px;"><img src="https://b.zmtcdn.com/data/o2_assets/01040767e4943c398e38e3592bb1ba8a1616150142.png" class="img3"></div>
+                      <div class="suj" style="width: 120px; height: 80px; background-color: aqueamarine;position: absolute; top: 80px; left: 100px;"><p class="p2">Nightlife</p></div>
+                </div>   
+            </div>
+             <div class="filter">
+               <button class="filt">Filters</button>
+               <button class="filt1">Rating:4.0+</button>
+               <button class="filt2">Pure Veg</button>
+               <select name="cuisines" id="12" class="filt3">
+                <option value="Cuisines">Cuisines</option>
+               </select>
+             </div>
+        </div>
+        <div class="food">
+          <h1 class="firstorder">Inspiration for your first order</h1>
+          <div class="food1"><img src="	https://b.zmtcdn.com/data/o2_assets/f9d277eb1668d7abf9235302402b06001632716602.png" width="150px" height="150px" style="border-radius: 50%;"></div>
+          <h3 class="kachori">Kachori</h3>
+          <div class="food2"><img src="	https://b.zmtcdn.com/data/o2_assets/fc641efbb73b10484257f295ef0b9b981634401116.png" width="150px" height="150px" style="border-radius: 50%;" ></div>
+          <h3 class="sandwich">Sandwich</h3>
+          <div class="food3"><img src="https://b.zmtcdn.com/data/o2_assets/8dc39742916ddc369ebeb91928391b931632716660.png" width="150px" height="150px" style="border-radius: 50%;" ></div>
+          <h3 class="dosa">Dosa</h3>
+          <div class="food4"><img src="https://b.zmtcdn.com/data/o2_assets/348a8b7fdafc56ba233c77113e7e3a491632716601.png" width="150px" height="150px" style="border-radius: 50%;"></div>
+          <h3 class="jalebi">Jalebi</h3>
+          <div class="food5"><img src="https://b.zmtcdn.com/data/dish_images/d5ab931c8c239271de45e1c159af94311634805744.png" width="150px" height="150px" style="border-radius: 50%;" ></div>
+          <h3 class="cake">Cake</h3>
+          <div class="food6"><img src="	https://b.zmtcdn.com/data/dish_images/197987b7ebcd1ee08f8c25ea4e77e20f1634731334.png" width="150px" height="150px" style="border-radius: 50%;"></div>
+          <h3 class="chicken"> Chicken</h3>
+        </div>
+        <div class="brand">
+          <h1 class="topbrand">Top brands for you</h1>
+          <div class="top1"><img src="https://b.zmtcdn.com/data/brand_creatives/logos/3a58b67479fd290ff96996002438736e_1672389253.png?output-format=webp" width="150px" height="150px" style=" border-radius: 50%;"></div>
+          <h3 class="wow">WOW! Momo</h3><h2 class="du">32 min</h2>
+          <div class="top2"><img src="https://b.zmtcdn.com/data/brand_creatives/logos/560b209a689eefa9feb367b5d5604097_1611382952.png?output-format=webp" width="150px" height="150px" style=" border-radius: 50%;"></div>
+          <h3 class="kfc">KFC</h3><h2 class="du1">26 min</h2>
+          <div class="top3"><img src="https://b.zmtcdn.com/data/brand_creatives/logos/b5068f3dfc0118b7b8a3cd0429ac953f_1696570852.png?output-format=webp" width="150px" height="150px" style="border-radius: 50%;"></div>
+          <h3 class="chowman">Chowman</h3><h2 class="du2">50 min</h2>
+          <div class="top4"><img src="https://b.zmtcdn.com/data/brand_creatives/logos/fe5db95ae85292933996d4043f600d3b_1611320738.png?output-format=webp" width="150px" height="150px" style="border-radius: 50%;"></div>
+          <h3 class="arsalan">Arsalan</h3><h2 class="du3">41 min</h2>
+          <div class="top5"><img src="https://b.zmtcdn.com/data/brand_creatives/logos/6a11fd0f30c9fd9ceaff2f5b21f61d23_1617188103.png?output-format=webp" width="150px" height="150px" style="border-radius: 50%;"></div>
+          <h3 class="burger">Burger King</h3><h2 class="du4">43 min</h2>
+          <div class="top6"><img src="https://b.zmtcdn.com/data/brand_creatives/logos/a2531dc570196c0cd9322814eb010d94_1605102324.png?output-format=webp" width="150px" height="150px" style="border-radius: 50%;"></div>
+          <h3 class="gupta">Gupta Brother</h3><h2 class="du5">47 min</h2>
+        </div>
+        <div class="best">
+          <h1 class="bestfood">Best Food in Kolkata</h1>
+        </div>
+        <div class="ads">
+           <div class="row1">
+             <div class="mik"><div class="bor"> <img src="https://b.zmtcdn.com/data/pictures/chains/3/18343753/39458ad89c80f6fcae3038eb4fd8c982_o2_featured_v2.jpg?output-format=webp" width="350px" height="280px" style="border-radius: 20px 20px 20px 20px;"><div class="offer">50% OFF</div></div> 
+              <div class="name"><div class="names"><p class="shop">Keventers-Milkshakes & Desserts</p></div><div class="rate"><p class="rating">4.3⭐</p></div>
+               <div class="money"><div class="item"><p class="pa">Beverages, Shakes, Ice..</p></div><div class="cost"><p class="pb"> &#8377;250 for one</p><span class="pc">44min</span></div></div>
+              </div>
+            </div>
+             <div class="mik" style="background-color: chartreeuse;"><div class="bor1"><img src="https://b.zmtcdn.com/data/pictures/chains/9/21429/d505be0b3ee11e4f79581b7b9df2d04a_o2_featured_v2.jpg?output-format=webp" width="350px" height="280px" style="border-radius: 20px 20px 20px 20px;"><div class="offer">50% OFF</div></div>
+             <div class="name" style="position: absolute; left: 375px;"><div class="names"><p class="shop">Allen Kitchen</p></div><div class="rate"><p class="rating">4.1⭐</p></div>
+             <div class="money"><div class="item"><p class="pa">Bengali, Seafood</p></div><div class="cost"><p class="pb"> &#8377;250 for one</p><span class="pc">27min</span></div></div>
+            </div>
+             <div class="mik" style="background-color: burleywood;"><div class="bor2"><img src="https://dorkar.in/wp-content/uploads/2022/07/biriyani4-3.jpg" width="350px" height="280px" style="border-radius: 20px 20px 20px 20px;"><div class="offer">50% OFF</div></div></div>
+             <div class="name" style="position: absolute; left: 740px;"><div class="names"><p class="shop">Elahi Luxury Dining</p></div><div class="rate"><p class="rating">4.0⭐</p></div>
+             <div class="money"><div class="item"><p class="pa">North Indian, Chinese, Mu...</p></div><div class="cost"><p class="pb"> &#8377;250 for one</p><span class="pc">42min</span></div></div>
+           </div>
+           <div class="row2">
+            <div class="mik"><div class="bor"> <img src="https://b.zmtcdn.com/data/pictures/chains/5/21495/a7e3f83dd2c5a5d7805d0ad1270fe8e5_o2_featured_v2.jpg?output-format=webp" width="350px" height="280px" style="border-radius: 20px 20px 20px 20px;"><div class="offer">50% OFF</div></div> 
+            <div class="name"><div class="names"><p class="shop">Chowman</p></div><div class="rate"><p class="rating">4.2⭐</p></div>
+             <div class="money"><div class="item"><p class="pa">Chinese, Asian, Thai, ...</p></div><div class="cost"><p class="pb"> &#8377;250 for one</p><span class="pc">50min</span></div></div>
+            </div>
+            </div>
+           <div class="mik" style="background-color: chartereuse;"><div class="bor1"><img src="https://b.zmtcdn.com/data/pictures/chains/6/21176/3eaa34537c383cd11672dfbc8f55bd33_o2_featured_v2.jpg?output-format=webp" width="350px" height="280px" style="border-radius: 20px 20px 20px 20px;"><div class="offer">50% OFF</div></div>
+           <div class="name" style="position: absolute; left: 375px;"><div class="names"><p class="shop">Nizam's Since 1932</p></div><div class="rate"><p class="rating">4.2⭐</p></div>
+           <div class="money"><div class="item"><p class="pa">Briyani, North Indian, ...</p></div><div class="cost"><p class="pb"> &#8377;250 for one</p><span class="pc">44min</span></div></div>
+            </div>
+           <div class="mik" style="background-color: burleywood;"><div class="bor2"><img src="https://b.zmtcdn.com/data/pictures/chains/7/20797/7c440b99b4140cce88505e64bb690b0f_o2_featured_v2.jpg?output-format=webp" width="350px" height="280px" style="border-radius: 20px 20px 20px 20px;"><div class="offer">50% OFF</div></div></div>
+           <div class="name" style="position: absolute; left: 740px;"><div class="names"><p class="shop">Arsalan</p></div><div class="rate"><p class="rating">4.2⭐</p></div>
+           <div class="money"><div class="item"><p class="pa">Briyani, North Indian, ...</p></div><div class="cost"><p class="pb"> &#8377;250 for one</p><span class="pc">41min</span></div></div>
+           </div>
+           <div class="row3">
+            <div class="mik"><div class="bor"> <img src="https://b.zmtcdn.com/data/pictures/chains/0/22460/045fa3e9db1354d1675baacc778cd33b_o2_featured_v2.jpg?output-format=webp" width="350px" height="280px" style="border-radius: 20px 20px 20px 20px;"><div class="offer">50% OFF</div></div> 
+            <div class="name"><div class="names"><p class="shop">AnnaRas-Since 1989</p></div><div class="rate"><p class="rating">4.5⭐</p></div>
+             <div class="money"><div class="item"><p class="pa">Gujarati, Street Food, ...</p></div><div class="cost"><p class="pb"> &#8377;250 for one</p><span class="pc">38min</span></div></div>
+            </div>
+            </div>
+           <div class="mik" style="background-color: chaertreuse;"><div class="bor1"><img src="https://b.zmtcdn.com/data/pictures/chains/4/21144/43572a0522b6d5c8951a08850ee85d6a_o2_featured_v2.jpg?output-format=webp" width="350px" height="280px" style="border-radius: 20px 20px 20px 20px;"><div class="offer">50% OFF</div></div>
+           <div class="name" style="position: absolute; left: 375px;"><div class="names"><p class="shop">Barista Coffee</p></div><div class="rate"><p class="rating">4.2⭐</p></div>
+           <div class="money"><div class="item"><p class="pa">Cafe, Coffee, Desserts</p></div><div class="cost"><p class="pb"> &#8377;250 for one</p><span class="pc">38min</span></div></div>
+            </div>
+           <div class="mik" style="background-color: burlyworod;"><div class="bor2"><img src="https://b.zmtcdn.com/data/pictures/chains/7/20287/fe824c9c285a7da8961df29a0b80d67f_o2_featured_v2.jpg?output-format=webp" width="350px" height="280px" style="border-radius: 20px 20px 20px 20px;"><div class="offer">50% OFF</div></div></div>
+           <div class="name" style="position: absolute; left: 740px;"><div class="names"><p class="shop">KFC</p></div><div class="rate"><p class="rating">4.2⭐</p></div>
+           <div class="money"><div class="item"><p class="pa">Fast Food, Burger, Biryani ...</p></div><div class="cost"><p class="pb"> &#8377;250 for one</p><span class="pc">26min</span></div></div>
+           </div>
+           <div class="row4">
+            <div class="mik"><div class="bor"> <img src="https://b.zmtcdn.com/data/pictures/chains/4/19193204/8c49ba335683507ba6ddee2dc84966e8_o2_featured_v2.jpg" width="350px" height="280px" style="border-radius: 20px 20px 20px 20px;"><div class="offer">50% OFF</div></div> 
+            <div class="name"><div class="names"><p class="shop">Burger King</p></div><div class="rate"><p class="rating">3.9⭐</p></div>
+             <div class="money"><div class="item"><p class="pa">Burger, Fast Food, D...</p></div><div class="cost"><p class="pb"> &#8377;100 for one</p><span class="pc">43min</span></div></div>
+            </div>
+            </div>
+           <div class="mik" style="background-color: charrtreuse;"><div class="bor1"><img src="https://b.zmtcdn.com/data/pictures/7/18578307/d60d81d492555d99f95894d9bbb960b7_o2_featured_v2.jpg" width="350px" height="280px" style="border-radius: 20px 20px 20px 20px;"><div class="offer">50% OFF</div></div>
+           <div class="name" style="position: absolute; left: 375px;"><div class="names"><p class="shop">Sufi Palace</p></div><div class="rate"><p class="rating">4.2⭐</p></div>
+           <div class="money"><div class="item"><p class="pa">Biryani, North Indian, Mug...</p></div><div class="cost"><p class="pb"> &#8377;100 for one</p><span class="pc">35min</span></div></div>
+            </div>
+           <div class="mik" style="background-color: burrlywood;"><div class="bor2"><img src="https://b.zmtcdn.com/data/pictures/chains/3/20723/a6c42cc3212d88f9b8741d4162efd197_o2_featured_v2.jpg" width="350px" height="280px" style="border-radius: 20px 20px 20px 20px;"><div class="offer">50% OFF</div></div></div>
+           <div class="name" style="position: absolute; left: 740px;"><div class="names"><p class="shop">Gupta Brothers</p></div><div class="rate"><p class="rating">4.3⭐</p></div>
+           <div class="money"><div class="item"><p class="pa">Mishti, Desserts, North Indian...</p></div><div class="cost"><p class="pb"> &#8377;100 for one</p><span class="pc">35min</span></div></div>
+           </div>
+           <div class="row5">
+            <div class="mik"><div class="bor"> <img src="https://b.zmtcdn.com/data/pictures/5/19055815/f4ec28bb17b5e6e6e1cdb7e15f4452cd_o2_featured_v2.jpg" width="350px" height="280px" style="border-radius: 20px 20px 20px 20px;"><div class="offer">50% OFF</div></div> 
+            <div class="name"><div class="names"><p class="shop">Cafe Town</p></div><div class="rate"><p class="rating">4.2⭐</p></div>
+             <div class="money"><div class="item"><p class="pa">Sandwich, Fast Food, Street</p></div><div class="cost"><p class="pb"> &#8377;100 for one</p><span class="pc">34min</span></div></div>
+            </div>
+            </div>
+           <div class="mik" style="background-color: chrartreuse;"><div class="bor1"><img src="https://b.zmtcdn.com/data/pictures/8/21288/8b3bc793c5151b163bc4cfcb1c46a047_o2_featured_v2.jpg" width="350px" height="280px" style="border-radius: 20px 20px 20px 20px;"><div class="offer">20% OFF</div></div>
+           <div class="name" style="position: absolute; left: 375px;"><div class="names"><p class="shop">New Paul Dhaba</p></div><div class="rate"><p class="rating">3.9⭐</p></div>
+           <div class="money"><div class="item"><p class="pa">Chinese, North Indian, Mu...</p></div><div class="cost"><p class="pb"> &#8377;100 for one</p><span class="pc">30min</span></div></div>
+            </div>
+           <div class="mik" style="background-color: burlrywood;"><div class="bor2"><img src="https://b.zmtcdn.com/data/pictures/1/19327771/b7f12b66f4faf9b8a72749981c1d8755_o2_featured_v2.jpg" width="350px" height="280px" style="border-radius: 20px 20px 20px 20px;"><div class="offer">50% OFF</div></div></div>
+           <div class="name" style="position: absolute; left: 740px;"><div class="names"><p class="shop">Jeet Momo Stall</p></div><div class="rate"><p class="rating">4.2⭐</p></div>
+           <div class="money"><div class="item"><p class="pa">Momos</p></div><div class="cost"><p class="pb"> &#8377;100 for one</p><span class="pc">40min</span></div></div>
+           </div>
+           <div class="row6">
+            <div class="mik"><div class="bor"> <img src="https://b.zmtcdn.com/data/pictures/4/19751344/b7d59326f8685102953df1279033e9d6_o2_featured_v2.jpg" width="350px" height="280px" style="border-radius: 20px 20px 20px 20px;"><div class="offer">10% OFF</div></div> 
+            <div class="name"><div class="names"><p class="shop">Shree Balaji South Indian...</p></div><div class="rate"><p class="rating">4.2⭐</p></div>
+             <div class="money"><div class="item"><p class="pa">South Indian</p></div><div class="cost"><p class="pb"> &#8377;200 for one</p><span class="pc">42min</span></div></div>
+            </div>
+            </div>
+           <div class="mik" style="background-color: charrtereuse;"><div class="bor1"><img src="https://b.zmtcdn.com/data/pictures/chains/3/19389263/75fb72db1f40ce9c2d894f0c431c1ea9_o2_featured_v2.jpg" width="350px" height="280px" style="border-radius: 20px 20px 20px 20px;"><div class="offer">50% OFF</div></div>
+           <div class="name" style="position: absolute; left: 375px;"><div class="names"><p class="shop">Kwality Wall's Frozen De..</p></div><div class="rate"><p class="rating">4.4⭐</p></div>
+           <div class="money"><div class="item"><p class="pa">Ice Cream</p></div><div class="cost"><p class="pb"> &#8377;200 for one</p><span class="pc">24min</span></div></div>
+            </div>
+           <div class="mik" style="background-color: burlywoeod;"><div class="bor2"><img src="https://b.zmtcdn.com/data/pictures/2/20012/9e061f6e1939991a4e75acb714c7edff_o2_featured_v2.jpg" width="350px" height="280px" style="border-radius: 20px 20px 20px 20px;"><div class="offer">50% OFF</div></div></div>
+           <div class="name" style="position: absolute; left: 740px;"><div class="names"><p class="shop">Aminia</p></div><div class="rate"><p class="rating">4.1⭐</p></div>
+           <div class="money"><div class="item"><p class="pa">Biryani, Mughlai, North Indian..</p></div><div class="cost"><p class="pb"> &#8377;200 for one</p><span class="pc">35min</span></div></div>
+           </div>
+           <div class="row7">
+            <div class="mik"><div class="bor"> <img src="https://b.zmtcdn.com/data/pictures/chains/8/19137878/edae7f8ddd7d4b18a9f176c9a48331a4_o2_featured_v2.jpg" width="350px" height="280px" style="border-radius: 20px 20px 20px 20px;"><div class="offer">50% OFF</div></div> 
+            <div class="name"><div class="names"><p class="shop">Edabba</p></div><div class="rate"><p class="rating">4.0⭐</p></div>
+             <div class="money"><div class="item"><p class="pa">Chinese, North Indian, ...</p></div><div class="cost"><p class="pb"> &#8377;150 for one</p><span class="pc">34min</span></div></div>
+            </div>
+            </div>
+           <div class="mik" style="background-color: chartrreuse;"><div class="bor1"><img src="https://b.zmtcdn.com/data/pictures/6/18597456/70c2515bbd7f5c448b79dfeddd38c511_o2_featured_v2.jpg" width="350px" height="280px" style="border-radius: 20px 20px 20px 20px;"><div class="offer">50% OFF</div></div>
+           <div class="name" style="position: absolute; left: 375px;"><div class="names"><p class="shop">Red Chillies</p></div><div class="rate"><p class="rating">4.3⭐</p></div>
+           <div class="money"><div class="item"><p class="pa">Chinese, Thai, Sichuan</p></div><div class="cost"><p class="pb"> &#8377;150 for one</p><span class="pc">29min</span></div></div>
+            </div>
+           <div class="mik" style="background-color: burrlywood;"><div class="bor2"><img src="https://b.zmtcdn.com/data/pictures/9/18566609/f99dd4b1b6e41cd314e0f49b65749124_o2_featured_v2.jpg" width="350px" height="280px" style="border-radius: 20px 20px 20px 20px;"><div class="offer">50% OFF</div></div></div>
+           <div class="name" style="position: absolute; left: 740px;"><div class="names"><p class="shop">Chinese Dhaba</p></div><div class="rate"><p class="rating">3.7⭐</p></div>
+           <div class="money"><div class="item"><p class="pa">Chinese, North Indian, ..</p></div><div class="cost"><p class="pb"> &#8377;150 for one</p><span class="pc">30min</span></div></div>
+           </div>
+        </div>
+        <div class="explore">
+          <h1 class="near">Explore options near me</h1>
+          <select class="nearme" name="popular" id="123">
+            <option value="Popular cuisines near me">Popular cuisines near me</option>
+          </select>
+          <select class="nearme1" name="popular" id="123">
+            <option value="Popular cuisines near me">Popular restaurant types near me</option>
+            <option value="Popular cuisines near me">mehfil</option>
+            <option value="Popular cuisines near me">grand hotel</option>
+          </select>
+          <select class="nearme2" name="popular" id="123">
+            <option value="Popular cuisines near me">Top Restaurant </option>
+            <option value="Popular cuisines near me">Top Restaurant 111</option>
+            <option value="Popular cuisines near me">Top Restaurant 2222</option>
+          </select>
+          <select class="nearme3" name="popular" id="123">
+            <option value="Popular cuisines near me">hyderabad</option>
+            <option value="Popular cuisines near me"> kolkata</option>
+            <option value="Popular cuisines near me"> delhi</option>
+            <option value="Popular cuisines near me"> banglore</option>
+          </select>
+        </div>
+        <div class="foot">
+          <img class="zoma" src="https://b.zmtcdn.com/web_assets/b40b97e677bc7b2ca77c58c61db266fe1603954218.png?fit=around|198:42&crop=198:42;*,*">
+          <select class="india" name="india1" id="abc">
+            <option value="India">India</option>
+          </select>
+          <select class="english" name="english1" id="abc1">
+            <option value="English">English</option>
+          </select>
+          <p class="abo">ABOUT ZOMATO</p>
+          <ol class="w" type="1">
+            <li class="about1">Who We Are</li>
+            <li class="about1">Blog</li>
+            <li class="about1">Work With Us</li>
+            <li class="about1">Investor Relations</li>
+            <li class="about1">Report Fraud</li>
+            <li class="about1">Press Kit</li>
+            <li class="about1">Contact Us</li>
+          </ol>
+          <p class="zom">ZOMAVERSE</p>
+          <ol class="y" type="1">
+            <li class="about1">Zomato</li>
+            <li class="about1">Blinkit</li>
+            <li class="about1">Feeding India</li>
+            <li class="about1">Hyperpure</li>
+            <li class="about1">Zomaland</li>
+          </ol>
+          <p class="for">FOR RESTAURANTS</p>
+          <ol class="z" type="1">
+            <li class="about1">Partner With Us</li>
+            <li class="about1">Apps For You</li>
+          </ol>
+          <p class="ent">FOR ENTERPRISES</p>
+          <ol class="for1">
+            <li>Zomato For Enterprise</li>
+          </ol>
+          <p class="more"> LEARN MORE</p>
+          <ol class="priv">
+            <li class="about1">Privacy</li>
+            <li class="about1">Security</li>
+            <li class="about1">Terms</li>
+            <li class="about1">Sitemap</li>
+          </ol>
+          <p class="social">SOCIAL LINKS</p>
+          <img src="https://cdn-icons-png.flaticon.com/512/61/61109.png" class="common linked">
+          <img src="https://w7.pngwing.com/pngs/408/296/png-transparent-app-b-w-instagram-logo-media-popular-social-2018-social-media-black-and-white-logos-icon.png" class="common insta">
+          <img src="https://www.svgrepo.com/show/138536/twitter-social-logotype.svg" class="common twit">
+          <img src="https://thumbs.dreamstime.com/b/youtube-logo-icon-voronezh-russia-november-square-black-color-164586300.jpg" class="common you">
+          <img src="https://seeklogo.com/images/F/facebook-icon-black-logo-133935095E-seeklogo.com.png" class="common fb">
+          <img src="https://b.zmtcdn.com/data/webuikit/9f0c85a5e33adb783fa0aef667075f9e1556003622.png" class="appstore">    
+          <img src="https://b.zmtcdn.com/data/webuikit/23e930757c3df49840c482a8638bf5c31556001144.png" class="play">
+        </div>
+  
+    
+</body>
+</html>
